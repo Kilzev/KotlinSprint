@@ -8,4 +8,5 @@ fun main() {
     val investYears: Int = 20
     val profit: String = String.format("%.3f", clientDeposit * ((1 + interestRate).pow(investYears)))
     println(profit)
+
 }
