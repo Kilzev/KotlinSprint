@@ -1,9 +1,10 @@
 package org.example.lesson_1
-
+const val secondsInMinute = 60
+const val minutesInHour = 60
 fun main() {
     val totalSeconds = 6480
-    val hours = totalSeconds / 3600
-    val minutes = totalSeconds % 3600 / 60
-    val seconds = totalSeconds % 60
-    println("0$hours:$minutes:0$seconds")
+    val hours = String.format("%02d",totalSeconds /secondsInMinute/minutesInHour)
+    val minutes = String.format("%02d",totalSeconds % (secondsInMinute*minutesInHour) / minutesInHour)
+    val seconds = String.format("%02d",totalSeconds % secondsInMinute)
+    println("$hours:$minutes:$seconds")
 }
