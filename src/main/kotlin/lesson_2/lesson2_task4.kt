@@ -8,4 +8,5 @@ fun main(){
     val bonusIron = (iron * bonusCoefficient).toInt()
     println(bonusCrystal)
     println(bonusIron)
+
 }
