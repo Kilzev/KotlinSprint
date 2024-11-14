@@ -8,4 +8,5 @@ fun main() {
     val minutes = totalSeconds % (SECONDS_IN_MINUTE * MINUTES_IN_HOUR) / MINUTES_IN_HOUR
     val seconds = totalSeconds % SECONDS_IN_MINUTE
     println("%02d:%02d:%02d".format(hours, minutes, seconds))
+
 }
