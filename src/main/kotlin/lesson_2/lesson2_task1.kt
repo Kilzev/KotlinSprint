@@ -6,8 +6,7 @@ fun main() {
     val secondStudentMark = 4f
     val thirdStudentMark = 3f
     val fourthStudentMark = 5f
-    val averageMark = (firstStudentMark + secondStudentMark + thirdStudentMark
-            + fourthStudentMark)/numOfStudents
+    val averageMark = (firstStudentMark + secondStudentMark + thirdStudentMark + fourthStudentMark) / numOfStudents
     println(averageMark)
 
 }
