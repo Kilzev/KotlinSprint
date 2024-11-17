@@ -1,7 +1,7 @@
 package org.example.lesson_2
 
 const val MINUTES_IN_HOUR: Int = 60
-const val hoursInDay: Int = 24
+const val HOURS_IN_DAY: Int = 24
 
 fun main() {
     val departureHour: Int = 9
@@ -10,7 +10,7 @@ fun main() {
 
     val totalDepartureMinute = departureHour * MINUTES_IN_HOUR + departureMinute
     val totalArrivalMinute = totalDepartureMinute + minutesTravelTime
-    val arrivalHour = String.format("%02d", totalArrivalMinute / MINUTES_IN_HOUR % hoursInDay)
+    val arrivalHour = String.format("%02d", totalArrivalMinute / MINUTES_IN_HOUR % HOURS_IN_DAY)
     val arrivalMinute = String.format("%02d", totalArrivalMinute % MINUTES_IN_HOUR)
 
     println("$arrivalHour:$arrivalMinute")
