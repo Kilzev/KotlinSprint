@@ -8,9 +8,10 @@ fun main() {
     println("Сложите числа $numFirst и $numSecond. Ваш ответ:")
 
     val userAnswer = readln().toInt()
-    if(correctAnswer == userAnswer){
+    if (correctAnswer == userAnswer) {
         println("Доступ разрешен")
+    } else {
+        println("Доступ запрещен")
     }
-    else{println("Доступ запрещен")}
 
 }
