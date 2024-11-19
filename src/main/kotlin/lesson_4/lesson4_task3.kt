@@ -13,10 +13,10 @@ fun main() {
 
     println(
         "Благоприятные ли условия сейчас для роста бобовых? ${
-            (WEATHER_CONDITION_SUNNY == currentWeatherConditionSunny) and
-                    (TENT_OPENED == currentTentOpened) and 
-                    (AIR_HUMIDITY == currentAirHumidity) and
-                    (TIME_OF_YEAR == currentTimeOfYear)
+            WEATHER_CONDITION_SUNNY == currentWeatherConditionSunny &&
+                    TENT_OPENED == currentTentOpened && 
+                    AIR_HUMIDITY == currentAirHumidity &&
+                    TIME_OF_YEAR == currentTimeOfYear
         }"
     )
 }
