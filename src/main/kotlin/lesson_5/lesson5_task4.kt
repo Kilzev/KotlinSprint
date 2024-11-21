@@ -9,7 +9,7 @@ fun main() {
         println("Введите пароль: ")
         val userPassword = readln()
         if (userPassword == existingPassword) {
-            println("Добро пожаловать, Zaphod")
+            println("Добро пожаловать, $userLogin")
         } else {
             println("Доступ запрещен")
         }
