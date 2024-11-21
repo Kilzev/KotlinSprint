@@ -9,9 +9,9 @@ fun main() {
     println("Введите второе число в диапазоне от о до 42: ")
     val userSecondNum = readln().toInt()
 
-    if (userFirstNum == firstWinNum && userSecondNum == secondWinNum) {
+    if ((userFirstNum == firstWinNum || userFirstNum == secondWinNum) && (userSecondNum == secondWinNum || userSecondNum == firstWinNum)) {
         println("Поздравляем! Вы выиграли главный приз! ")
-    } else if (userFirstNum == firstWinNum || userSecondNum == secondWinNum) {
+    } else if ((userFirstNum == firstWinNum || userFirstNum == secondWinNum) || (userSecondNum == secondWinNum || userSecondNum == firstWinNum)) {
         println("Вы выиграли утешительный приз!")
     } else {
         println("Неудача")
